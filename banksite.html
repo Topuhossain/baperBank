@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h3 class="text-5xl text-center mt-16">Here Your <span class="font-semibold  text-fuchsia-800">Moooooney</span></h3>
+    </header>
+
+   <main class="w-3/4 mx-auto">
+       <!-- balance check  -->
+    <section class="mt-6">
+        <div class="grid grid-cols-3 gap-4 ">
+        <div class="bg-lime-200 p-10 ">
+            <h2 class=" text-3xl " >Deposit</h2>
+            <h2  class="text-5xl">$<span id="total-deposit">000</span> </h2>
+        </div>
+        <div class="bg-lime-300 p-10 ">
+            <h2 class=" text-3xl " >Widthdraw</h2>
+            <h2  class="text-5xl">$ <span id="total-withdraw">000</span> </h2>
+        </div>
+        <div class="bg-lime-500 p-10 ">
+            <h2 class=" text-3xl " >balance</h2>
+            <h2 class="text-5xl">$ <span id="total-balance" >1000</span>  </h2>
+        </div>
+    </div>
+    </section>
+    <!-- deposit and Widthdraw section  -->
+    <section class="mt-6">
+        <div class="grid grid-cols-2 gap-6 ">
+            <div class="bg-indigo-400 p-10 ">
+                <h2 class=" text-2xl " >please Depsit</h2>
+                <div>
+            
+            
+                    <input id="deposit" class="block px-3 border-2 w-3/4  mt-8 p-2  rounded border-yellow-600 " type="text" placeholder="$put your amount">
+                   
+                    <button id="deposit-button" class="bg-lime-900 mt-8 rounded  font-semibold text-white px-4 py-2">submit</button>
+                </div>
+            </div>
+            <div class="bg-fuchsia-400 p-10   ">
+                <h2 class="text-2xl">withdraw here</h2>
+                <div>
+            
+            
+                    <input id="withdraw" class="block px-3 border-2 w-3/4  mt-8 p-2  rounded border-yellow-600 " type="text" placeholder="$put your amount">
+                   
+                    <button id="withdraw-button" class="bg-lime-900 mt-8 rounded  font-semibold text-white px-4 py-2">submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+   </main>
+
+
+   <script src="app.js"></script>
+
+</body>
+</html>
